@@ -29,7 +29,8 @@ app.getInfo = function (){
 // ***End of app.getInfo Function***
 
 // ***calling the app.getInfo() function when the button is clicked by user***
-$('.goButton').on("click", function() {
+$('form').on("submit", function(e) {
+    e.preventDefault();
 	app.getInfo();
 });
 
