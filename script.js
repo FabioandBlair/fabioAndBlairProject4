@@ -14,7 +14,14 @@ app.getInfo = function (){
         }
     }).then(function(yearResults){
         const top5 = yearResults[0][chosenCategory];
-        if(chosenCategory === 'books') {
+        if (chosenCategory === '') {
+            swal('Please select an category');
+        }
+        // Else below not working!!!!!!
+        // else if (chosenYear === '') {
+        //     swal('Please select an year');
+        // }
+        else if(chosenCategory === 'books') {
             top5.forEach(function(item) {
                 console.log(item);
                 const htmlToAppend = `
@@ -23,28 +30,34 @@ app.getInfo = function (){
                 </div>
                 `;
                 $('.results').append(htmlToAppend);
-            })} else {
+            })
+        } else if (chosenCategory === 'songs') {
+            top5.forEach(function (item) {
+                console.log(item);
+                const htmlToAppend = `
+                <div>
+                    <p><em>${item.title}</em> by ${item.artist}</p>
+                </div>
+                `;
+                $('.results').append(htmlToAppend);
+            })
+        }
+            
+            else {
             top5.forEach(function(item) {
             console.log(item);
             const htmlToAppend = `
             <div>
-                <p>${item.title}</p>
+                <p><em>${item.title}</em></p>
             </div>
             `;
+            // $('.results').empty();
             $('.results').append(htmlToAppend);
             }
             );
         }
     })};
-        // ADD an error handling... if year is blank --> please choose a year 
-        // **ADD an error handling... "if chosenCategory = empty string, display all?!"
-        // Figure out how to get the chosenCategory.arrayNumber to print to the page... below prints the category to the page.
-        // $('.results p').append(chosenCategory);
-        // $('.result')    
-        // $('.results p').append(chosenCategory.forEach([indexOf()])title);... music/array0-4/title 
-
-
-    // })
+        
 
 // ***End of app.getInfo Function***
 
