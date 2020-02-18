@@ -1,0 +1,43 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+a,
+button,
+form {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}

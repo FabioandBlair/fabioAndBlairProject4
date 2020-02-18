@@ -1,0 +1,27 @@
+footer {
+    color: $color4;
+    background-color: $color5;
+    font-family: $mainFont;
+}
+
+.footerFlexParent {
+    display: flex;
+    justify-content: center;
+}
+
+.footerFlexParent p {
+    margin: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: $color4;
+}
+
+a:hover {
+    border: 2px solid $color4;
+}
+
+// footer p {
+
+// }

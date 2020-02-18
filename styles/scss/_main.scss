@@ -1,0 +1,37 @@
+main {
+    font-family: $mainFont;
+        background-color: $color2;
+}
+
+button, 
+input, 
+select, 
+textarea {
+    font-family: $mainFont;
+}
+
+.instructions,
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.instructions {
+    margin: 25px 10%;
+}
+
+button {
+    margin: 20px 45%;
+}
+
+.mainFlexParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formFlexParent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
