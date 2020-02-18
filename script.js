@@ -14,18 +14,28 @@ app.getInfo = function (){
         }
     }).then(function(yearResults){
         const top5 = yearResults[0][chosenCategory];
-
-        // if chosenCategory = songs etc... 
-        top5.forEach(function(item) {
+        if(chosenCategory === 'books') {
+            top5.forEach(function(item) {
+                console.log(item);
+                const htmlToAppend = `
+                <div>
+                    <p><em>${item.title}</em> by ${item.author}</p>
+                </div>
+                `;
+                $('.results').append(htmlToAppend);
+            })} else {
+            top5.forEach(function(item) {
             console.log(item);
             const htmlToAppend = `
             <div>
                 <p>${item.title}</p>
             </div>
             `;
-
             $('.results').append(htmlToAppend);
-        });
+            }
+            );
+        }
+    })};
         // ADD an error handling... if year is blank --> please choose a year 
         // **ADD an error handling... "if chosenCategory = empty string, display all?!"
         // Figure out how to get the chosenCategory.arrayNumber to print to the page... below prints the category to the page.
@@ -34,10 +44,8 @@ app.getInfo = function (){
         // $('.results p').append(chosenCategory.forEach([indexOf()])title);... music/array0-4/title 
 
 
-    })  
+    // })
 
-
-}
 // ***End of app.getInfo Function***
 
 // ***calling the app.getInfo() function when the button is clicked by user***
@@ -55,7 +63,7 @@ $('form').on("submit", function(e) {
 $(function(){
     // app.init();
     console.log('working')
-})
+});
 
 
 
