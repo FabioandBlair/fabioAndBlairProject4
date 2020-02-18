@@ -13,12 +13,24 @@ app.getInfo = function (){
             year: chosenYear
         }
     }).then(function(yearResults){
-        console.log(yearResults);
-        console.log(chosenCategory);
+        const top5 = yearResults[0][chosenCategory];
+
+        // if chosenCategory = songs etc... 
+        top5.forEach(function(item) {
+            console.log(item);
+            const htmlToAppend = `
+            <div>
+                <p>${item.title}</p>
+            </div>
+            `;
+
+            $('.results').append(htmlToAppend);
+        });
         // ADD an error handling... if year is blank --> please choose a year 
         // **ADD an error handling... "if chosenCategory = empty string, display all?!"
         // Figure out how to get the chosenCategory.arrayNumber to print to the page... below prints the category to the page.
-        $('.results p').append(chosenCategory);
+        // $('.results p').append(chosenCategory);
+        // $('.result')    
         // $('.results p').append(chosenCategory.forEach([indexOf()])title);... music/array0-4/title 
 
 
