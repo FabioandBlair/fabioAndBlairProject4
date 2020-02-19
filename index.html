@@ -12,55 +12,64 @@
 </head>
 <body>
     <header>
-        <h1>Flashback... 80s Top 5s!</h1>
+        <div class="wrapper">
+            <div class="logoContainer">
+                <img src="./assets/v-year.png" alt="Logo Back to the Eighties">
+            </div>
+            <div class="titleContainer">
+                <h1>Flashback... 80s Top 5s!</h1>
+            </div>
+        </div>
     </header>
 
-
     <main>
-        <div class="mainFlexParent">
-            <section class="instructions">
-                <p>Choose a year and category</p>
-            </section>
+        <div class="wrapper">
+            <div class="mainFlexParent">
+                <section class="instructions">
+                    <p>Choose a year and category</p>
+                </section>
 
+                <section>
+                    <div class="formFlexParent">
+                        <form action="#" method="#" class="myForm" name="myForm">
+                            <select name="year" id="year">
+                                <option value="" selected>Select year</option>
+                                <option value="1980">1980</option>
+                                <option value="1981">1981</option>
+                                <option value="1982">1982</option>
+                                <option value="1983">1983</option>
+                                <option value="1984">1984</option>
+                                <option value="1985">1985</option>
+                                <option value="1986">1986</option>
+                                <option value="1987">1987</option>
+                                <option value="1988">1988</option>
+                                <option value="1989">1989</option>
+                            </select>
+                            <select name="category" id="category">
+                                <option value="" selected>Select category</option>
+                                <option value="books">Books</option>
+                                <option value="movies">Movies</option>
+                                <option value="shows">Shows</option>
+                                <option value="songs">Songs</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="goButton" id="goButton">GO!</button>
+                    </form> 
+                </section>
 
-            <section>
-                <div class="formFlexParent">
-                    <form action="#" method="#" class="myForm" name="myForm">
-                        <select name="year" id="year">
-                            <option value="" selected>Select year</option>
-                            <option value="1980">1980</option>
-                            <option value="1981">1981</option>
-                            <option value="1982">1982</option>
-                            <option value="1983">1983</option>
-                            <option value="1984">1984</option>
-                            <option value="1985">1985</option>
-                            <option value="1986">1986</option>
-                            <option value="1987">1987</option>
-                            <option value="1988">1988</option>
-                            <option value="1989">1989</option>
-                        </select>
-                        <select name="category" id="category">
-                            <option value="" selected>Select category</option>
-                            <option value="books">Books</option>
-                            <option value="movies">Movies</option>
-                            <option value="shows">Shows</option>
-                            <option value="songs">Songs</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="goButton" id="goButton">GO!</button>
-                </form> 
-            </section>
-
-            <section class="results">
-                <div class="resultsFlex"></div>
-            </section>
-        </div>
+                <section class="results">
+                    <div class="resultsFlex"></div>
+                </section>
+            </div>
+        </div>  <!-- End of main wrapper -->
     </main>
     <footer>
-        <div class="footerFlexParent">
-            <p>&copy; Fabio and Blair 2020</p>
-            <p>*API courtesy of <a href="https://hackeryou.github.io/RetroAPIDocumentation">Retro API</a></p>
-        </div>  
+        <div class="wrapper">
+            <div class="footerFlexParent">
+                <p>&copy; Fabio and Blair 2020</p>
+                <p>*API courtesy of <a href="https://hackeryou.github.io/RetroAPIDocumentation">Retro API</a></p>
+            </div>
+        </div>   <!-- End of footer wrapper --> 
     </footer>
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>

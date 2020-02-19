@@ -5,15 +5,18 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 1.6;
+    color: $color4;
 }
 
 .wrapper {
     max-width: 1240px;
+    width: 85%;
     margin: 0 auto;
 }
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 body,

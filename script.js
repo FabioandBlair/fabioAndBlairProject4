@@ -25,13 +25,11 @@ app.getInfo = function (){
         }).then(function(yearResults){
             $(".resultsFlex").empty();
             const top5 = yearResults[0][chosenCategory];
-            // console.log(yearResults);
-            // console.log(chosenYear, chosenCategory);
     
             if(chosenCategory === 'books') {
                 $(".resultsFlex").empty();
                 top5.forEach(function(item) {
-                    console.log(item);
+                    
                     const htmlToAppend = `
                         <p><em>${item.title}</em> by ${item.author}</p>
                     `;
@@ -40,7 +38,6 @@ app.getInfo = function (){
             } else if (chosenCategory === 'songs') {
                 $(".resultsFlex").empty();
                 top5.forEach(function (item) {
-                    console.log(item);
                     const htmlToAppend = `
                         <p><em>${item.title}</em> by ${item.artist}</p>
                     `;
@@ -49,7 +46,6 @@ app.getInfo = function (){
             }  else {
                 $(".resultsFlex").empty();
                 top5.forEach(function(item) {
-                console.log(item);
                 const htmlToAppend = `
                     <p><em>${item.title}</em></p>
                 `;
@@ -81,7 +77,6 @@ app.init = function() {
 
 // ***Document ready***
 $(function(){
-    // console.log('working')
     app.init();
 });
 
