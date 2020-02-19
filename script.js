@@ -1,8 +1,9 @@
 const app = {};
 
+
 app.getInfo = function (){
-    let chosenYear = $('#year').val();
-    let chosenCategory = $('#category').val();
+    let chosenYear = $("#year").val();
+	let chosenCategory = $("#category").val();
 
     $.ajax({
         url:'https://retroapi.hackeryou.com/api/years/year',
@@ -13,16 +14,18 @@ app.getInfo = function (){
             year: chosenYear
         }
     }).then(function(yearResults){
+        $(".resultsFlex").empty();
         const top5 = yearResults[0][chosenCategory];
+        console.log(yearResults);
         if (chosenCategory === '') {
             swal('Oops...', 'Please select a category.', 'warning');
         }
-        
-        // Else below not working!!!!!!
+        // // Else below not working!!!!!!
         // else if (chosenYear === '') {
-        //     swal('Please select an year');
+        //     swal('Please select a year');
         // }
         else if(chosenCategory === 'books') {
+            $(".resultsFlex").empty();
             top5.forEach(function(item) {
                 console.log(item);
                 const htmlToAppend = `
@@ -31,6 +34,7 @@ app.getInfo = function (){
                 $('.resultsFlex').append(htmlToAppend);
             })
         } else if (chosenCategory === 'songs') {
+            $(".resultsFlex").empty();
             top5.forEach(function (item) {
                 console.log(item);
                 const htmlToAppend = `
@@ -41,12 +45,12 @@ app.getInfo = function (){
         }
             
             else {
+            $(".resultsFlex").empty();
             top5.forEach(function(item) {
             console.log(item);
             const htmlToAppend = `
                 <p><em>${item.title}</em></p>
             `;
-            // $('.resultsFlex').empty();
                 $('.resultsFlex').append(htmlToAppend);
             }
             );

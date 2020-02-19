@@ -236,12 +236,12 @@ header {
 }
 
 h1 {
-  font-family: "Sriracha, cursive";
+  font-family: "Sriracha", cursive;
   margin: 50px 0;
 }
 
 main {
-  font-family: "Open Sans, sans-serif";
+  font-family: "Open Sans", sans-serif;
   background-color: #02a9ea;
 }
 
@@ -249,7 +249,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Open Sans, sans-serif";
+  font-family: "Open Sans", sans-serif;
 }
 
 .instructions,
@@ -283,7 +283,7 @@ button {
           justify-content: center;
 }
 
-.formFlexParent {
+.resultsFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,14 +291,16 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
 }
 
 footer {
   color: #faff00;
   background-color: #000300;
-  font-family: "Open Sans, sans-serif";
+  font-family: "Open Sans", sans-serif;
 }
 
 .footerFlexParent {
