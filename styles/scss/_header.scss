@@ -11,7 +11,6 @@ header .wrapper {
 
 .logoContainer {
     width: calc(15% -10%);
-    // width: 15%;
     padding: 2% 0;
     margin-right: 10%;
 }
@@ -21,8 +20,9 @@ header .wrapper {
 }
 
 .titleContainer {
-    width: 85%;
+    width: calc(85% - 10%);
     padding: 2% 0;
+    margin-left: 10%;
 }
 
 h1 {

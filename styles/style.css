@@ -186,7 +186,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.6;
   color: #faff00;
 }
@@ -253,8 +253,9 @@ header .wrapper {
 }
 
 .titleContainer {
-  width: 85%;
+  width: calc(85% - 10%);
   padding: 2% 0;
+  margin-left: 10%;
 }
 
 h1 {
@@ -347,3 +348,14 @@ a {
 a:hover {
   border: 2px solid #faff00;
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  header .wrapper {
+    width: 85%;
+    padding: 1% 0;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */

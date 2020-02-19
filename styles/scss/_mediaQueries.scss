@@ -1,0 +1,16 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+    header .wrapper {
+    width: 85%;
+    padding: 1% 0;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
