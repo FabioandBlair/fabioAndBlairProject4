@@ -15,8 +15,9 @@ app.getInfo = function (){
     }).then(function(yearResults){
         const top5 = yearResults[0][chosenCategory];
         if (chosenCategory === '') {
-            swal('Please select an category');
+            swal('Oops...', 'Please select a category.', 'warning');
         }
+        
         // Else below not working!!!!!!
         // else if (chosenYear === '') {
         //     swal('Please select an year');
@@ -25,21 +26,17 @@ app.getInfo = function (){
             top5.forEach(function(item) {
                 console.log(item);
                 const htmlToAppend = `
-                <div>
                     <p><em>${item.title}</em> by ${item.author}</p>
-                </div>
                 `;
-                $('.results').append(htmlToAppend);
+                $('.resultsFlex').append(htmlToAppend);
             })
         } else if (chosenCategory === 'songs') {
             top5.forEach(function (item) {
                 console.log(item);
                 const htmlToAppend = `
-                <div>
                     <p><em>${item.title}</em> by ${item.artist}</p>
-                </div>
                 `;
-                $('.results').append(htmlToAppend);
+                $('.resultsFlex').append(htmlToAppend);
             })
         }
             
@@ -47,12 +44,10 @@ app.getInfo = function (){
             top5.forEach(function(item) {
             console.log(item);
             const htmlToAppend = `
-            <div>
                 <p><em>${item.title}</em></p>
-            </div>
             `;
-            // $('.results').empty();
-            $('.results').append(htmlToAppend);
+            // $('.resultsFlex').empty();
+                $('.resultsFlex').append(htmlToAppend);
             }
             );
         }
@@ -61,21 +56,19 @@ app.getInfo = function (){
 
 // ***End of app.getInfo Function***
 
-// ***calling the app.getInfo() function when the button is clicked by user***
-$('form').on("submit", function(e) {
-    e.preventDefault();
-	app.getInfo();
-});
+// ***Using the app.init to call the app.getInfo() function when the button is clicked by user***
 
-
-// NEED TO FILL THIS IN!!!!!
-// app.init = function(){
-// };
+app.init = function() {
+    $('form').on("submit", function(e) {
+        e.preventDefault();
+        app.getInfo();
+    });
+};
 
 // ***Document ready***
 $(function(){
-    // app.init();
-    console.log('working')
+    // console.log('working')
+    app.init();
 });
 
 
