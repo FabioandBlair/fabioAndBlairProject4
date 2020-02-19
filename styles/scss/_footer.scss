@@ -18,7 +18,8 @@ a {
     color: $color4;
 }
 
-a:hover {
+a:hover,
+a:focus {
     border: 2px solid $color4;
 }
 

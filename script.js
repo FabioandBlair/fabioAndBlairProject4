@@ -23,33 +23,33 @@ app.getInfo = function (){
             year: chosenYear
             }
         }).then(function(yearResults){
-            $(".resultsFlex").empty();
+            $('ul').empty();
             const top5 = yearResults[0][chosenCategory];
     
             if(chosenCategory === 'books') {
-                $(".resultsFlex").empty();
+                $('ul').empty();
                 top5.forEach(function(item) {
                     
                     const htmlToAppend = `
-                        <p><em>${item.title}</em> by ${item.author}</p>
+                        <li><em>${item.title}</em> by ${item.author}</li>
                     `;
-                    $('.resultsFlex').append(htmlToAppend);
+                    $('ul').append(htmlToAppend);
                 })
             } else if (chosenCategory === 'songs') {
-                $(".resultsFlex").empty();
+                $('ul').empty();
                 top5.forEach(function (item) {
                     const htmlToAppend = `
-                        <p><em>${item.title}</em> by ${item.artist}</p>
+                        <li><em>${item.title}</em> by ${item.artist}</li>
                     `;
-                    $('.resultsFlex').append(htmlToAppend);
+                    $('ul').append(htmlToAppend);
                 })
             }  else {
-                $(".resultsFlex").empty();
+                $('ul').empty();
                 top5.forEach(function(item) {
                 const htmlToAppend = `
-                    <p><em>${item.title}</em></p>
+                    <li><em>${item.title}</em></li>
                 `;
-                    $('.resultsFlex').append(htmlToAppend);
+                    $('ul').append(htmlToAppend);
                 }
                 );
             }

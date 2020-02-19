@@ -21,7 +21,23 @@ form {
 }
 
 button {
-    margin: 20px 45%;
+    margin: 20px 45% 20px 46%;
+    padding: 1% 2%;
+    color: $color4;
+    background-color: $color1;
+    font-weight: bold;
+    border: none;
+    border-radius: 5%;
+    box-shadow: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+button:hover,
+button:focus {
+    color: $color1;
+    background-color: $color4;
+    box-shadow: 5px 10px 5px 0px $color1;
 }
 
 .mainFlexParent {
@@ -35,4 +51,28 @@ button {
     flex-direction: column;
     align-items: center;
     padding: 25px 0;
+    margin-bottom: 25px;
 }
+
+select {
+    margin: 3% 1%;
+    border-radius: 5px;
+    color: $color4;
+    background-color: $color1;
+    border: none;
+    border-radius: 5px;
+}
+
+select#year {
+    padding: 0 34px;
+}
+
+select#category {
+    padding: 0 15px;
+}
+
+select:hover,
+select:focus {
+    border: 2px solid $color4;
+}
+
