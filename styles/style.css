@@ -359,6 +359,19 @@ select:focus {
   border: 2px solid #faff00;
 }
 
+.swal-icon--warning {
+  background-color: #faff00;
+}
+
+.swal-title {
+  font-family: "Sriracha", cursive;
+}
+
+.swal-text {
+  color: #000300;
+  font-family: "Open Sans", sans-serif;
+}
+
 footer {
   color: #faff00;
   background-color: #ff01fb;

@@ -76,3 +76,17 @@ select:focus {
     border: 2px solid $color4;
 }
 
+// ***Pop up sweet alert styling*** 
+.swal-icon--warning {
+    background-color: $color4;
+}
+
+
+.swal-title {
+    font-family: $headerFont;
+}
+
+.swal-text {
+    color: $color5;
+    font-family: $mainFont;
+}
