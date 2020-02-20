@@ -260,6 +260,11 @@ h1 {
   color: #fdff00;
 }
 
+img {
+  -webkit-box-shadow: 5px 10px 5px 0px #ff01fb;
+          box-shadow: 5px 10px 5px 0px #ff01fb;
+}
+
 main {
   font-family: "Open Sans", sans-serif;
   background-color: #000300;
@@ -342,7 +347,7 @@ select {
   border-radius: 5px;
   color: #faff00;
   background-color: #ff01fb;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 5px;
 }
 
@@ -394,6 +399,7 @@ footer {
 a {
   text-decoration: none;
   color: #faff00;
+  border: 2px solid transparent;
 }
 
 a:hover,
