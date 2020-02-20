@@ -181,7 +181,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /* Coolors Exported Palette from coolors.co/ff01fb-02a9ea-f6f7f8-faff00-000300 */
-/* RGB */
 html {
   font-size: 62.5%;
 }
@@ -387,6 +386,10 @@ button:focus {
   margin: 0 20% 25px 31%;
 }
 
+.resultsFlex li {
+  line-height: 2;
+}
+
 select {
   margin: 3% 1%;
   border-radius: 5px;
@@ -453,6 +456,12 @@ a:focus {
   border: 2px solid #fdff00;
 }
 
+@media (max-width: 1150px) {
+  .resultsFlex {
+    margin: 0 10% 25px 22%;
+  }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   header .wrapper {
@@ -469,6 +478,9 @@ a:focus {
   .footerFlexParent {
     display: block;
     text-align: center;
+  }
+  .resultsFlex {
+    margin: 0 2% 25px 11%;
   }
 }
 
@@ -509,6 +521,12 @@ a:focus {
   button {
     margin: 30px 20% 0 20%;
     padding: 1% 20%;
+  }
+  .resultsFlex {
+    margin: 3% 1% 25px 2%;
+  }
+  .resultsFlex li {
+    text-align: left;
   }
   header .wrapper,
   .mainFlexParent,

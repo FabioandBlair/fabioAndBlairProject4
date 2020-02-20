@@ -1,5 +1,6 @@
 const app = {};
 
+// Validating the input from the user before we make the API call 
 app.validateInput = function(chosenYear, chosenCategory) {
     if (chosenCategory === '' || chosenYear === '') {
         return false;
@@ -7,6 +8,7 @@ app.validateInput = function(chosenYear, chosenCategory) {
     return true
 }
 
+// function that makes everything happen - API Called, results cleared (if there) and printed when selected
 app.getInfo = function (){
     let chosenYear = $("#year").val();
     let chosenCategory = $("#category").val();
@@ -61,22 +63,13 @@ app.getInfo = function (){
                     $('ul').append(htmlToAppend);
                 }
                 );
-        }
-        
-    })};
+            }    
+        })
+    };
 };
-
-        // ajax request returning a Promise
-        // Promise running another function call 
-        
-
-    
-        
-
 // ***End of app.getInfo Function***
 
 // ***Using the app.init to call the app.getInfo() function when the button is clicked by user***
-
 app.init = function() {
     $('form').on("submit", function(e) {
         e.preventDefault();
@@ -88,31 +81,3 @@ app.init = function() {
 $(function(){
     app.init();
 });
-
-
-
-
-
-
-// DELETE BEFORE HANDING IN!!!!!*******************
-// ***************PSEUDO CODE FROM PROJECT GUIDELINES************
-
-
-// // Create app namespace to hold all methods
-// const app = {};
-
-// // Collect user input
-// app.collectInfo = function() {};
-
-// // Make AJAX request with user inputted data
-// app.getInfo = function() {};
-
-// // Display data on the page
-// app.displayInfo = function() {};
-
-// // Start app
-// app.init = function() {};
-
-// $(function() {
-// 	app.init();
-// });

@@ -1,7 +1,6 @@
 main {
     font-family: $mainFont;
     background-color: $color5;
-    // margin: 100px 0 50px;
 }
 
 button, 
@@ -41,7 +40,6 @@ button:focus {
     background-color: $color4;
     box-shadow: 5px 10px 5px 0px $color1;
     border: 2px solid $color1;
-
 }
 
 .mainFlexParent {
@@ -53,9 +51,12 @@ button:focus {
 .resultsFlex {
     display: flex;
     flex-direction: column;
-    // align-items: center;
     padding: 25px 0;
     margin: 0 20% 25px 31%;
+}
+
+.resultsFlex li {
+    line-height: 2;
 }
 
 select {
@@ -84,7 +85,6 @@ select:focus {
 .swal-icon--warning {
     background-color: $color4;
 }
-
 
 .swal-title {
     font-family: $headerFont;

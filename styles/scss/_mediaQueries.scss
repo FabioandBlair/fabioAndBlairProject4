@@ -1,3 +1,9 @@
+
+@media (max-width: 1150px) {
+    .resultsFlex {
+        margin: 0 10% 25px 22%;    
+    }
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 
@@ -16,6 +22,10 @@
     .footerFlexParent {
         display: block;
         text-align: center;
+    }
+
+    .resultsFlex {
+        margin: 0 2% 25px 11%;
     }
 }
 
@@ -69,6 +79,15 @@
         padding: 1% 20%;
     }
 
+    .resultsFlex {
+        margin: 3% 1% 25px 2%;
+    }
+
+    // aligning the results to the left in mobile instead of centering them 
+    .resultsFlex li {
+        text-align: left;
+    }
+
     // Disabling Flexboxes for Mobile
     header .wrapper,
     .mainFlexParent,
@@ -77,5 +96,4 @@
     form {
         display: block;
     }
-
 }
