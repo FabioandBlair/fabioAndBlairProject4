@@ -9,6 +9,13 @@ body {
     background-color: $color5;
 }
 
+.appContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .wrapper {
     max-width: 1240px;
     width: 85%;

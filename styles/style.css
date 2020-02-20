@@ -193,6 +193,20 @@ body {
   background-color: #000300;
 }
 
+.appContainer {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .wrapper {
   max-width: 1240px;
   width: 85%;
@@ -300,7 +314,6 @@ img {
 main {
   font-family: "Open Sans", sans-serif;
   background-color: #000300;
-  margin: 100px 0 50px;
 }
 
 button,
@@ -321,7 +334,7 @@ form {
 }
 
 .instructions {
-  margin: 25px 10%;
+  margin: 25px 0%;
 }
 
 button {

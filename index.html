@@ -16,69 +16,71 @@
     <title>Fabio and Blair's Project 4 App</title>
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="logoContainer">
-                <img src="./assets/v-year.png" alt="Logo Back to the Eighties">
+    <div class="appContainer">
+        <header>
+            <div class="wrapper">
+                <div class="logoContainer">
+                    <img src="./assets/v-year.png" alt="Logo Back to the Eighties">
+                </div>
+                <div class="titleContainer">
+                    <h1>Flashback</h1>
+                    <h2>1980's Top 5's!</h2>
+                </div>
             </div>
-            <div class="titleContainer">
-                <h1>Flashback</h1>
-                <h2>1980's Top 5's!</h2>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <div class="wrapper">
-            <div class="mainFlexParent">
-                <section class="instructions">
-                    <h2>Choose a year and category</h2>
-                </section>
+        <main>
+            <div class="wrapper">
+                <div class="mainFlexParent">
+                    <section class="instructions">
+                        <h2>Choose a year and category</h2>
+                    </section>
 
-                <section>
-                    <div class="formFlexParent">
-                        <form action="#" method="#" class="myForm" name="myForm">
-                            <select name="year" id="year">
-                                <option value="" selected>Select year</option>
-                                <option value="1980">1980</option>
-                                <option value="1981">1981</option>
-                                <option value="1982">1982</option>
-                                <option value="1983">1983</option>
-                                <option value="1984">1984</option>
-                                <option value="1985">1985</option>
-                                <option value="1986">1986</option>
-                                <option value="1987">1987</option>
-                                <option value="1988">1988</option>
-                                <option value="1989">1989</option>
-                            </select>
-                            <select name="category" id="category">
-                                <option value="" selected>Select category</option>
-                                <option value="books">Books</option>
-                                <option value="movies">Movies</option>
-                                <option value="shows">Shows</option>
-                                <option value="songs">Songs</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="goButton" id="goButton">Go!</button>
-                    </form> 
-                </section>
+                    <section>
+                        <div class="formFlexParent">
+                            <form action="#" method="#" class="myForm" name="myForm">
+                                <select name="year" id="year">
+                                    <option value="" selected>Select year</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                </select>
+                                <select name="category" id="category">
+                                    <option value="" selected>Select category</option>
+                                    <option value="books">Books</option>
+                                    <option value="movies">Movies</option>
+                                    <option value="shows">Shows</option>
+                                    <option value="songs">Songs</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="goButton" id="goButton">Go!</button>
+                        </form> 
+                    </section>
 
-                <section class="results">
-                    <ul class="resultsFlex"></ul>
-                </section>
-            </div>
-        </div>  <!-- End of main wrapper -->
-    </main>
-    <footer>
-        <div class="wrapper">
-            <div class="footerFlexParent">
-                <p>&copy; Fabio and Blair 2020</p>
-                <p>*API courtesy of <a href="https://hackeryou.github.io/RetroAPIDocumentation">Retro API</a></p>
-            </div>
-        </div>   <!-- End of footer wrapper --> 
-    </footer>
+                    <section class="results">
+                        <ul class="resultsFlex"></ul>
+                    </section>
+                </div>
+            </div>  <!-- End of main wrapper -->
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="footerFlexParent">
+                    <p>&copy; Fabio and Blair 2020</p>
+                    <p>*API courtesy of <a href="https://hackeryou.github.io/RetroAPIDocumentation">Retro API</a></p>
+                </div>
+            </div>   <!-- End of footer wrapper --> 
+        </footer>
 
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="script.js"></script>
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+        <script src="script.js"></script>
+    </div>    
 </body>
 </html>
