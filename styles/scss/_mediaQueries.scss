@@ -2,15 +2,71 @@
 @media (max-width: 940px) {
 
     header .wrapper {
-    width: 85%;
+    width: 90%;
     padding: 1% 0;
+    }
+
+    .footerFlexParent {
+        padding: 1.5%;
     }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    .footerFlexParent {
+        display: block;
+        text-align: center;
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+    body {
+        text-align: center;
+    }
+
+    // Header Mobile
+    header .wrapper {
+        width: 95%;
+    }
+
+    .logoContainer {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .titleContainer {
+        width: 100%;
+        padding-top: 2.5%;
+        margin-left: 0;
+    }
+
+    h1,
+    h2 {
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h1,
+    .titleContainer h2 {
+        letter-spacing: 5px;
+    }
+
+    .titleContainer h2 {
+        font-size: 7.5vw;
+    }
+
+    // Disabling Flexboxes for Mobile
+    header .wrapper,
+    .mainFlexParent,
+    .resultsFlex,
+    .instructions,
+    form {
+        display: block;
+    }
+
 }

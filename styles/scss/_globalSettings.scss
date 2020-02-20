@@ -6,6 +6,7 @@ body {
     font-size: 2rem;
     line-height: 1.6;
     color: $color4;
+    background-color: $color5;
 }
 
 .wrapper {
@@ -37,6 +38,19 @@ form {
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 li {
     text-decoration: none;
+}
+
+h1 {
+    font-size: 5.5vw;
+}
+
+a {
+    display: inline-block;
+    padding: 25px 50px;
 }

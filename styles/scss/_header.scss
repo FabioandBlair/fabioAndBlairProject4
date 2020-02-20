@@ -3,35 +3,42 @@ header {
 }
 
 header .wrapper {
-    width: 70%;
-    padding: 1% 0;
+    width: 85%;
     display: flex;
     justify-content: space-around;
+    flex: 1, 2;
 }
 
 .logoContainer {
-    width: calc(15% -10%);
-    padding: 2% 0;
-    margin-right: 10%;
-}
-
-.logoContainer img {
-    width: 40vh;
+    width: 20%;
+    padding: 3% 0 1.5%;
+    order: 1;
 }
 
 .titleContainer {
-    width: calc(85% - 10%);
-    padding: 2% 0;
-    margin-left: 10%;
+    width: calc(80% - 7%);
+    padding-top: 2.5%;
+    margin-left: 7%;
+    order: 2;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
 }
 
 h1 {
+    color: $color1;
+}
+
+h1,
+.titleContainer h2 {
     font-family: $headerFont;
-    margin: 20px 0;
-    color: #fdff00;
-
+    letter-spacing: 5px;
 }
 
-img {
-    box-shadow: 5px 10px 5px 0px $color1;
+.titleContainer h2 {
+    font-size: 4.2vw;
+    color: $color4;
 }
+
