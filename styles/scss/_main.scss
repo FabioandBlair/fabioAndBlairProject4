@@ -1,6 +1,7 @@
 main {
     font-family: $mainFont;
-        background-color: $color5;
+    background-color: $color5;
+    margin: 100px 0 50px;
 }
 
 button, 
@@ -31,6 +32,7 @@ button {
     box-shadow: none;
     text-transform: uppercase;
     transition: 0.5s;
+    border: 2px solid transparent;
 }
 
 button:hover,
@@ -38,6 +40,8 @@ button:focus {
     color: $color1;
     background-color: $color4;
     box-shadow: 5px 10px 5px 0px $color1;
+    border: 2px solid $color1;
+
 }
 
 .mainFlexParent {

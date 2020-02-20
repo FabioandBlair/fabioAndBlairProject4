@@ -300,6 +300,7 @@ img {
 main {
   font-family: "Open Sans", sans-serif;
   background-color: #000300;
+  margin: 100px 0 50px;
 }
 
 button,
@@ -336,6 +337,7 @@ button {
   text-transform: uppercase;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border: 2px solid transparent;
 }
 
 button:hover,
@@ -344,6 +346,7 @@ button:focus {
   background-color: #fdff00;
   -webkit-box-shadow: 5px 10px 5px 0px #ff01fb;
           box-shadow: 5px 10px 5px 0px #ff01fb;
+  border: 2px solid #ff01fb;
 }
 
 .mainFlexParent {
@@ -423,6 +426,7 @@ footer {
 
 .footerFlexParent p {
   margin: 1%;
+  font-size: 1.5rem;
 }
 
 a {
@@ -485,6 +489,13 @@ a:focus {
   }
   .titleContainer h2 {
     font-size: 7.5vw;
+  }
+  .footerFlexParent p {
+    font-size: 1.75rem;
+  }
+  button {
+    margin: 30px 20% 0 20%;
+    padding: 1% 20%;
   }
   header .wrapper,
   .mainFlexParent,
