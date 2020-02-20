@@ -292,6 +292,11 @@ h1,
   color: #fdff00;
 }
 
+img {
+  -webkit-box-shadow: 5px 10px 5px 0px #ff01fb;
+          box-shadow: 5px 10px 5px 0px #ff01fb;
+}
+
 main {
   font-family: "Open Sans", sans-serif;
   background-color: #000300;
@@ -362,11 +367,8 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 25px 0;
-  margin-bottom: 25px;
+  margin: 0 20% 25px 31%;
 }
 
 select {

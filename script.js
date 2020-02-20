@@ -31,7 +31,7 @@ app.getInfo = function (){
                 top5.forEach(function(item) {
                     
                     const htmlToAppend = `
-                        <li><em>${item.title}</em> by ${item.author}</li>
+                        <li>&#128214;  <em>${item.title}</em> by ${item.author}</li>
                     `;
                     $('ul').append(htmlToAppend);
                 })
@@ -39,22 +39,31 @@ app.getInfo = function (){
                 $('ul').empty();
                 top5.forEach(function (item) {
                     const htmlToAppend = `
-                        <li><em>${item.title}</em> by ${item.artist}</li>
+                        <li>&#119070;  <em>${item.title}</em> by ${item.artist}</li>
                     `;
                     $('ul').append(htmlToAppend);
                 })
-            }  else {
+            }  else if (chosenCategory === 'movies'){
                 $('ul').empty();
                 top5.forEach(function(item) {
                 const htmlToAppend = `
-                    <li><em>${item.title}</em></li>
+                    <li>&#127909;   <em>${item.title}</em></li>
                 `;
                     $('ul').append(htmlToAppend);
                 }
                 );
-            }
-        })
-    };
+            } else {
+                $('ul').empty();
+                top5.forEach(function(item) {
+                const htmlToAppend = `
+                    <li>&#128250;   <em>${item.title}</em></li>
+                `;
+                    $('ul').append(htmlToAppend);
+                }
+                );
+        }
+        
+    })};
 };
 
         // ajax request returning a Promise
